@@ -1,10 +1,8 @@
 const fs = require('fs'); 
-const haha = require('./haha'); 
 
 function addProdTyper() {
     const schemaPath = './src/schema.ts';
   
-    haha();
     fs.readFile(schemaPath, 'utf8', (err, data) => {
         if (err) {
             console.log(err);
@@ -19,6 +17,4 @@ function addProdTyper() {
     });
 }
   
-module.exports = {
-    addProdTyper  
-};
+addProdTyper();
