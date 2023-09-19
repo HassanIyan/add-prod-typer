@@ -1,5 +1,5 @@
 const fs = require('fs'); 
-const haha = require('./haha'); 
+const { haha } = require('./haha'); 
 
 function addProdTyper() {
     const schemaPath = './src/schema.ts';
