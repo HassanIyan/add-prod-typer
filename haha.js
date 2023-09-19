@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 function haha() {
-    const schemaPath = path.resolve(__dirname, '../src/schema.ts');
+    const schemaPath = path.resolve(__dirname, './src/schema.ts');
   
     fs.readFile(schemaPath, 'utf8', (err, data) => {
         if (err) {
